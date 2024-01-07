@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
+
 import Modal from "@/app/_components/Modal";
 import ModalHeader from "@/app/_components/templates/ModalHeader";
-import Link from "next/link";
 
 export default function LoginModal() {
   return (

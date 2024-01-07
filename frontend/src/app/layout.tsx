@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Header from "@/app/_components/Header";
-import Footer from "@/app/_components/Footer";
-
 const inter = Inter({
   weight: "variable",
   subsets: ["latin"],
@@ -23,9 +20,7 @@ export default function RootLayout(props: {
   return (
     <html lang="en" className={inter.className}>
       <body className="bg-bodyBackgroundColour text-primaryTextDefault">
-        <Header />
         {props.children}
-        <Footer />
         {props.modals}
       </body>
     </html>
